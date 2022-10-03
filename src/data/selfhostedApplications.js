@@ -6,6 +6,13 @@ export const selfhostedApplications = [
       "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/proxmox.png",
     },
     {
+      "name": "Proxmox Backup Server",
+      "description": "Network-wide protection",
+      "url": "h https://45.136.29.31:8007",
+      "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/proxmox.png",
+    },
+   
+    {
       "name": "Pi-hole",
       "description": "Network-wide protection",
       "url": "http://192.168.2.131",
