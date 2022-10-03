@@ -80,7 +80,7 @@ export const website = [
   {
     "name": "analytics.mxd.codes",
     "description": "Matomo Website Analytics",
-    "url": "http://192.168.2.122:7878/",
+    "url": "http://192.168.2.122:8080",
     "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/matomo.png",
   },
 ]
