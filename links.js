@@ -62,6 +62,12 @@ export const media = [
     "url": "http://192.168.2.122:8989/",
     "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/sonarr.png",
   },
+  {
+    "name": "Bazarr",
+    "description": "Subtitles",
+    "url": "http://192.168.2.122:6767/",
+    "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/bazarr.png",
+  },
 ]
 
 export const website = [
