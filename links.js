@@ -31,7 +31,7 @@ export const applications = [
     },
     {
       "name": "Cloudflare",
-      "description": "Telekom Speedport",
+      "description": "DNS + Proxy",
       "url": "https://dash.cloudflare.com/",
       "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/cloudflare.png",
     },
@@ -40,39 +40,27 @@ export const applications = [
 export const media = [
   {
     "name": "Jellyfin",
-    "description": "Telekom Speedport",
+    "description": "Media System",
     "url": "http://192.168.2.122:8096",
     "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/jellyfin.png",
   },
   {
     "name": "PhotoPrism",
-    "description": "Telekom Speedport",
+    "description": "Photos",
     "url": "http://192.168.2.122:2342",
     "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/photoprism.png",
   },
   {
     "name": "Radarr",
-    "description": "Telekom Speedport",
+    "description": "Movies",
     "url": "http://192.168.2.122:7878/",
     "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/radarr.png",
   },
   {
     "name": "Sonarr",
-    "description": "Telekom Speedport",
+    "description": "TV-Shows",
     "url": "http://192.168.2.122:8989/",
     "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/sonarr.png",
-  },
-  {
-    "name": "Jackett",
-    "description": "Telekom Speedport",
-    "url": "http://192.168.2.122:9117",
-    "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/jackett.png",
-  },
-  {
-    "name": "Transmission",
-    "description": "Transmission Web Interface",
-    "url": "http://192.168.2.122:9091",
-    "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/transmission.png",
   },
 ]
 
@@ -95,12 +83,6 @@ export const website = [
     "url": "http://192.168.2.122:7878/",
     "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/matomo.png",
   },
-  {
-    "name": "Webmentions",
-    "description": "Webmention",
-    "url": "https://webmention.io/",
-    "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/webmentions.png",
-  },
 ]
 
 export const tools = [
@@ -115,17 +97,5 @@ export const tools = [
     "description": "mailcow: dockerized - 🐮 + 🐋 = 💕",
     "url": "mailcow/mailcow-dockerized",
     "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/mailcow.png",
-  },
-  {
-    "name": "analytics.mxd.codes",
-    "description": "Matomo Website Analytics",
-    "url": "http://192.168.2.122:7878/",
-    "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/matomo.png",
-  },
-  {
-    "name": "Webmentions",
-    "description": "Webmention",
-    "url": "https://webmention.io/",
-    "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/webmentions.png",
   },
 ]

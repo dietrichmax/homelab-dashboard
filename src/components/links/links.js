@@ -12,6 +12,8 @@ const Card = styled.li`
     padding: var(--space-sm);
     :hover {
       cursor: pointer;
+      background-color: var(--primary-color);
+      color: var(--content-bg);
     }
 `
 const ImageContainer = styled.div`

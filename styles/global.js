@@ -70,9 +70,8 @@ const GlobalStyle = createGlobalStyle`
     image-rendering: crisp-edges;
   }
   body { 
-    --primary-color: #051129;
+    --primary-color: #e17d24;
     --secondary-color: #6680CA;
-    --thirdy-color: #A1B4EC;
     --body-bg: #0d1117;
     --content-bg: #1b2026;
     --gray: #c9d1d9;
