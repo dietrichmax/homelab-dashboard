@@ -48,7 +48,6 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     background: var(--body-bg);
-    line-height: 1.5;
     font-stretch: normal;
     font-family: var(--primary-font);
     -webkit-font-smoothing: antialiased;

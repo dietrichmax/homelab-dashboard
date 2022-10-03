@@ -40,21 +40,22 @@ const Link = styled.a`
 
 export default function LinksCard({item}) {
 
-  console.log(item.icon)
+  //console.log(item.icon)
   return (
       <Card>
         <Link href={item.url} target="_blank" title={item.description} alt={item.description}>
           <ImageContainer>
             <Image
               src={item.icon}
-              alt="Picture of the author"
-              width={50}
-              height={50}
+              title={item.name}
+              alt={item.name}
+              width={30}
+              height={30}
             />
           </ImageContainer>
           <div>
             <Title>{item.name}</Title>
-            <Description>{item.description}</Description>
+            {/*<Description>{item.description}</Description>*/}
             <SubTitle>{item.url}</SubTitle>
             </div>
         </Link>
