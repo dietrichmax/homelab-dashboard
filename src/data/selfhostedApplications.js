@@ -8,7 +8,7 @@ export const selfhostedApplications = [
     {
       "name": "Proxmox Backup Server",
       "description": "Network-wide protection",
-      "url": "h https://45.136.29.31:8007",
+      "url": "https://45.136.29.31:8007",
       "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/proxmox.png",
     },
    
