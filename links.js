@@ -98,4 +98,16 @@ export const tools = [
     "url": "mailcow/mailcow-dockerized",
     "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/mailcow.png",
   },
+  {
+    "name": "Transmission",
+    "description": "BitTorrent client",
+    "url": "http://192.168.2.122:9091",
+    "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/transmission.png",
+  },
+  {
+    "name": "Jackett",
+    "description": "Proxy Server",
+    "url": "http://192.168.2.122:9117",
+    "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/jackett.png",
+  },
 ]
