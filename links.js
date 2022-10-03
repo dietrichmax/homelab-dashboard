@@ -20,7 +20,7 @@ export const applications = [
     {
       "name": "Portainer",
       "description": "Docker and Kubernetes Management",
-      "url": "http://192.168.2.122:9443",
+      "url": "https://192.168.2.122:9443",
       "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/portainer.png",
     },
     {
