@@ -89,7 +89,7 @@ export const tools = [
   {
     "name": "CloudBeaver",
     "description": "Cloud Database Manager ",
-    "url": "cloudbeaver.io",
+    "url": "http://192.168.2.122:8081",
     "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/cloudbeaver.png",
   },
   {
