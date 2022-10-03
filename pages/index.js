@@ -94,7 +94,7 @@ export default function Home() {
             <Subtitle>Dashboard</Subtitle>
             <ServiceGrid>
               {selfhostedApplications.map((application, i) => {
-                return <LinkCard item={application} key={i}/>
+                return <LinkCard key={i}item={application}/>
               })}
             </ServiceGrid>
           </ServiceContainer>
@@ -110,8 +110,8 @@ export default function Home() {
                 <BookmarkItemTitle>Socials</BookmarkItemTitle>
                 {socials.map((item, i) => {
                   return (
-                    <BookmarkItem>
-                      <a key={i} href={item.url} title={item.name} alt={item.name}>{item.name}</a>
+                    <BookmarkItem key={i}>
+                      <a href={item.url} title={item.name} alt={item.name}>{item.name}</a>
                     </BookmarkItem>
                   )
                 })}
@@ -121,8 +121,8 @@ export default function Home() {
                 <BookmarkItemTitle>Reddit</BookmarkItemTitle>
                 {reddit.map((item, i) => {
                   return (
-                    <BookmarkItem>
-                      <a key={i} href={item.url} title={item.name} alt={item.name}>{item.name}</a>
+                    <BookmarkItem key={i}>
+                      <a href={item.url} title={item.name} alt={item.name}>{item.name}</a>
                     </BookmarkItem>
                   )
                 })}
