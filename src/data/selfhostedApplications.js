@@ -85,16 +85,16 @@ export const selfhostedApplications = [
       "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/mailcow.png",
     },
     {
-      "name": "Transmission",
+      "name": "QBittorrent",
       "description": "BitTorrent client",
-      "url": "http://192.168.2.122:9091",
-      "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/transmission.png",
+      "url": "http://192.168.2.122:5080/",
+      "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/qbittorrent.png",
     },
     {
-      "name": "Jackett",
+      "name": "Prowlarr",
       "description": "Proxy Server",
-      "url": "http://192.168.2.122:9117",
-      "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/jackett.png",
+      "url": "http://192.168.2.122:9696",
+      "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/prowlarr.png",
     },
     {
     "name": "mxd.codes",

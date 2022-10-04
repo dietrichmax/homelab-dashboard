@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p 3002",
+    "deploy": "git pull && npm run build && pm2 restart homelab-dashboard",
     "lint": "next lint"
   },
   "dependencies": {
