@@ -2,9 +2,6 @@ import Head from 'next/head'
 import Layout from '@/components/layout/layout'
 import LinkCard from '@/components/links/links'
 import styled from "styled-components"
-import { selfhostedApplications } from '@/src/data/selfhostedApplications'
-import { socials } from '@/src/data/socials'
-import { reddit } from '@/src/data/reddit'
 
 const Container = styled.main`
   margin: var(--space);
@@ -86,7 +83,7 @@ export default function Home() {
           <ServiceContainer>
             <Subtitle>Dashboard</Subtitle>
             <ServiceGrid>
-              {selfhostedApplications.map((application, i) => {
+              {dashboard.map((application, i) => {
                 return <LinkCard key={i}item={application}/>
               })}
             </ServiceGrid>
@@ -211,3 +208,170 @@ export default function Home() {
     </Layout>
   )
 }
+
+
+const dashboard = [
+{
+  "name": "Proxmox",
+  "description": "Proxmox Virtual Environment",
+  "url": "https://192.168.2.120:8006",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/proxmox.png",
+  },
+  {
+  "name": "Proxmox Backup Server",
+  "description": "Network-wide protection",
+  "url": "process.env.NEXT_PUBLIC_PROXMOX_BACKUP_SERVER",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/proxmox.png",
+  },
+
+  {
+  "name": "Pi-hole",
+  "description": "Network-wide protection",
+  "url": "http://192.168.2.131",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/pihole.png",
+  },
+  {
+  "name": "Nginx Proxy Manager",
+  "description": "Network-wide protection",
+  "url": "http://192.168.2.122:81",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/nginxproxymanager.png",
+  },
+  {
+  "name": "Portainer",
+  "description": "Docker and Kubernetes Management",
+  "url": "https://192.168.2.122:9443",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/portainer.png",
+  },
+  {
+  "name": "Router",
+  "description": "Telekom Speedport",
+  "url": "http://192.168.2.1",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/router.png",
+  },
+  {
+  "name": "Cloudflare",
+  "description": "DNS + Proxy",
+  "url": "https://dash.cloudflare.com/",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/cloudflare.png",
+  },
+  {
+  "name": "Jellyfin",
+  "description": "Media System",
+  "url": "http://192.168.2.122:8096",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/jellyfin.png",
+  },
+  {
+  "name": "PhotoPrism",
+  "description": "Photos",
+  "url": "http://192.168.2.122:2342",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/photoprism.png",
+  },
+  {
+  "name": "Radarr",
+  "description": "Movies",
+  "url": "http://192.168.2.122:7878/",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/radarr.png",
+  },
+  {
+  "name": "Sonarr",
+  "description": "TV-Shows",
+  "url": "http://192.168.2.122:8989/",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/sonarr.png",
+  },
+  {
+  "name": "Bazarr",
+  "description": "Subtitles",
+  "url": "http://192.168.2.122:6767/",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/bazarr.png",
+  },
+  {
+  "name": "CloudBeaver",
+  "description": "Cloud Database Manager ",
+  "url": "http://192.168.2.122:8081",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/cloudbeaver.png",
+  },
+  {
+  "name": "Mailcow",
+  "description": "mailcow: dockerized - 🐮 + 🐋 = 💕",
+  "url": "mailcow/mailcow-dockerized",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/mailcow.png",
+  },
+  {
+  "name": "QBittorrent",
+  "description": "BitTorrent client",
+  "url": "http://192.168.2.122:5080/",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/qbittorrent.png",
+  },
+  {
+  "name": "Prowlarr",
+  "description": "Proxy Server",
+  "url": "http://192.168.2.122:9696",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/prowlarr.png",
+  },
+  {
+  "name": "mxd.codes",
+  "description": "Personal website",
+  "url": "http://192.168.2.122:3001",
+  "icon": "https://api.mxd.codes/uploads/small_android_launchericon_512_512_a7c8044a93.png",
+  },
+  {
+  "name": "Strapi",
+  "description": "Strapi",
+  "url": "http://192.168.2.122:1337",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/strapi.png",
+  },
+  {
+  "name": "Matomo",
+  "description": "Web Analytics",
+  "url": "http://192.168.2.122:8080",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/matomo.png",
+  },
+  {
+  "name": "Github",
+  "description": "Github",
+  "url": "https://mxd.codes/github",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/github.png",
+  }
+]
+
+const reddit = [
+    {
+      "name": "r/homelab/",
+      "url": "https://www.reddit.com/r/homelab/"
+    },
+    {
+      "name": "/r/selfhosted/",
+      "url": "https://www.reddit.com/r/selfhosted/"
+    },
+    {
+      "name": "/r/finanzen",
+      "url": "https://www.reddit.com/r/finanzen/"
+    },
+    {
+      "name": "/r/de/",
+      "url": "https://www.reddit.com/r/de/"
+    },
+]
+
+const socials = [
+  {
+    "name": "Twitter",
+    "url": "https://mxd.codes/twitter"
+  },
+  {
+    "name": "Linkedin",
+    "url": "https://mxd.codes/linkedin"
+  },
+  {
+    "name": "Instagram",
+    "url": "https://mxd.codes/instagram"
+  },
+  {
+    "name": "Strava",
+    "url": "https://mxd.codes/strava"
+  },
+  {
+    "name": "Xing",
+    "url": "https://mxd.codes/xing"
+  }
+]
