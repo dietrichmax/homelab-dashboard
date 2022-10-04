@@ -1,17 +1,10 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Layout from '@/components/layout/layout'
 import LinkCard from '@/components/links/links'
 import styled from "styled-components"
 import { selfhostedApplications } from '@/src/data/selfhostedApplications'
 import { socials } from '@/src/data/socials'
 import { reddit } from '@/src/data/reddit'
-
-const Title = styled.h1`
-  color: var(--primary-color);
-  margin-bottom: var(--space-sm);
-  font-size: 1.5rem;
-`
 
 const Container = styled.main`
   margin: var(--space);
@@ -178,7 +171,7 @@ export default function Home() {
                       <a href={"https://www.customercontrolpanel.de/"} title={"Netcup CCP"} alt={"Netcup CCP"}>Netcup CCP</a>
                     </BookmarkItem>
                     <BookmarkItem>
-                      <a href={"https://www.servercontrolpanel.de/SCP/Home?site_key=gZGpUDBAgr61zWa5zx8PNPQ4Utw64UAZ"} title={"Netcup SCP"} alt={"Netcup SCP"}>Netcup SCP</a>
+                      <a href={"https://www.servercontrolpanel.de/SCP/Home"} title={"Netcup SCP"} alt={"Netcup SCP"}>Netcup SCP</a>
                     </BookmarkItem>
                     <BookmarkItem>
                       <a href={"https://aws.amazon.com"} title={"AWS"} alt={"AWS"}>AWS</a>

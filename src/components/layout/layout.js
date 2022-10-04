@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import styled from "styled-components"
-import Sidebar from '@/src/components/sidebar/sidebar'
+//import Sidebar from '@/src/components/sidebar/sidebar'
 
 
 const prism = require("prismjs")

@@ -23,10 +23,6 @@ const ImageContainer = styled.div`
 const Title = styled.h3`
 `
 
-const Description = styled.p`
-    font-size: 0.9rem;
-`
-
 const SubTitle = styled.span`
   display: block;
   :hover {
