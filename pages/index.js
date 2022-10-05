@@ -285,10 +285,10 @@ const dashboard = [
   "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/bazarr.png",
   },
   {
-  "name": "Overseer",
+  "name": "Overseerr",
   "description": "Subtitles",
   "url": "http://192.168.2.122:5055/",
-  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/overseer.png",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/overseerr.png",
   },
   {
   "name": "CloudBeaver",
