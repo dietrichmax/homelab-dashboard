@@ -323,7 +323,7 @@ const dashboard = [
   {
   "name": "Home Assistant",
   "description": "Proxy Server",
-  "url": "tbd",
+  "url": "http://192.168.2.122:8123",
   "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/home-assistant-circle.png",
   },
   {
