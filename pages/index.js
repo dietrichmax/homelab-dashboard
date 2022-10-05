@@ -318,13 +318,13 @@ const dashboard = [
   "name": "Tandoor",
   "description": "Proxy Server",
   "url": "http://192.168.2.122:82/",
-  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/tandoor.png",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/tandoorrecipes.png",
   },
   {
   "name": "Home Assistant",
   "description": "Proxy Server",
   "url": "tbd",
-  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/homeassistant.png",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/home-assistant-circle.png",
   },
   {
   "name": "mxd.codes",
