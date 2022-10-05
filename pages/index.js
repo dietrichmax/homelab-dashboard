@@ -285,6 +285,12 @@ const dashboard = [
   "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/bazarr.png",
   },
   {
+  "name": "Overseer",
+  "description": "Subtitles",
+  "url": "http://192.168.2.122:5055/",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/overseer.png",
+  },
+  {
   "name": "CloudBeaver",
   "description": "Cloud Database Manager ",
   "url": "http://192.168.2.122:8081",
@@ -307,6 +313,18 @@ const dashboard = [
   "description": "Proxy Server",
   "url": "http://192.168.2.122:9696",
   "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/prowlarr.png",
+  },
+  {
+  "name": "Tandoor",
+  "description": "Proxy Server",
+  "url": "http://192.168.2.122:82/",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/tandoor.png",
+  },
+  {
+  "name": "Home Assistant",
+  "description": "Proxy Server",
+  "url": "tbd",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/homeassistant.png",
   },
   {
   "name": "mxd.codes",
