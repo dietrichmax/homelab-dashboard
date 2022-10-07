@@ -21,6 +21,7 @@ const ImageContainer = styled.div`
 `
 
 const Title = styled.h3`
+line-height: 1.5;
 `
 
 const SubTitle = styled.span`
@@ -34,6 +35,11 @@ const Link = styled.a`
   display: flex;
 `
 
+const Description = styled.p`
+  font-style: italic;
+  margin-bottom: 2.5px;
+`
+
 export default function LinksCard({item}) {
 
   //console.log(item.icon)
@@ -45,13 +51,13 @@ export default function LinksCard({item}) {
               src={item.icon}
               title={item.name}
               alt={item.name}
-              width={30}
-              height={30}
+              width={60}
+              height={60}
             />
           </ImageContainer>
           <div>
             <Title>{item.name}</Title>
-            {/*<Description>{item.description}</Description>*/}
+            <Description>{item.description}</Description>
             <SubTitle>{item.url}</SubTitle>
             </div>
         </Link>
