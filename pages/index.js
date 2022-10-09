@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Layout from '@/components/layout/layout'
 import LinkCard from '@/components/links/links'
 import styled from "styled-components"
+import media from "styled-media-query"
 
 const Container = styled.main`
   margin: var(--space);
@@ -22,6 +23,18 @@ const ServiceGrid = styled.ol`
   gap: var(--space);
   grid-template-columns: repeat(5, minmax(0px, 1fr));
   border: 2px solid var(--content-bg);
+  ${media.lessThan("1400px")`
+  grid-template-columns: repeat(4, minmax(0px, 1fr));
+  `}
+  ${media.lessThan("1200px")`
+  grid-template-columns: repeat(3, minmax(0px, 1fr));
+  `}
+  ${media.lessThan("1000px")`
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+  `}
+  ${media.lessThan("800px")`
+  grid-template-columns: repeat(1, minmax(0px, 1fr));
+  `}
 
 `
 
@@ -41,16 +54,32 @@ const BookmarkContainer = styled.div`
 
 const AllBookmarkItems = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding-inline-start: 0px;
   margin-top: var(--space);
+  ${media.lessThan("1000px")`
+    display: block;
+  `}
 `
 
 const BookmarkItems = styled.div`
-  margin-right: var(--space);
   border-right : 2px solid var(--content-bg);
   min-width: 10%;
   padding: 0.25rem;
+  :last-child {
+    border-right : none;
+  }
+  ${media.lessThan("1000px")`
+    margin-right: 0;
+    padding-bottom: var(--space);
+    margin-bottom: var(--space);
+    border-right : none;
+    border-bottom : 2px solid var(--content-bg);
+    :last-child {
+      border-bottom : none;
+      margin-bottom: none;
+    }
+  `}
 `
 
 const BookmarkItemTitle = styled.p`
@@ -227,25 +256,25 @@ const dashboard = [
   {
   "name": "Pi-hole",
   "description": "Network-wide protection",
-  "url": "http://pihole.lan",
+  "url": "https://pihole.mxd.codes",
   "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/pihole.png",
   },
   {
   "name": "Nginx Proxy Manager",
   "description": "Network-wide protection",
-  "url": "http://npm.lan",
+  "url": "https://npm.mxd.codes",
   "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/nginxproxymanager.png",
   },
   {
   "name": "Portainer",
   "description": "Docker and Kubernetes Management",
-  "url": "http:/portainer.lan",
+  "url": "https:/portainer.mxd.codes",
   "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/portainer.png",
   },
   {
   "name": "Router",
   "description": "Telekom Speedport",
-  "url": "http://router.lan",
+  "url": "https://router.mxd.codes",
   "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/router.png",
   },
   {
@@ -257,43 +286,43 @@ const dashboard = [
   {
   "name": "Jellyfin",
   "description": "Media System",
-  "url": "http://media.lan",
+  "url": "https://media.mxd.codes",
   "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/jellyfin.png",
   },
   {
   "name": "Jellyseerr",
   "description": "Media System",
-  "url": "http://jellyseerr.lan",
+  "url": "https://jellyseerr.mxd.codes",
   "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/jellyseerr.png",
   },
   {
   "name": "PhotoPrism",
   "description": "Photos",
-  "url": "http://photos.lan",
+  "url": "https://photos.mxd.codes",
   "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/photoprism.png",
   },
   {
   "name": "Radarr",
   "description": "Movies",
-  "url": "http://radarr.lan",
+  "url": "https://radarr.mxd.codes",
   "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/radarr.png",
   },
   {
   "name": "Sonarr",
   "description": "TV-Shows",
-  "url": "http://sonarr.lan",
+  "url": "https://sonarr.mxd.codes",
   "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/sonarr.png",
   },
   {
   "name": "Bazarr",
   "description": "Subtitles",
-  "url": "http://bazarr.lan",
+  "url": "https://bazarr.mxd.codes",
   "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/bazarr.png",
   },
   {
   "name": "CloudBeaver",
   "description": "Cloud Database Manager ",
-  "url": "http://cloudb.lan",
+  "url": "https://clouddb.mxd.codes",
   "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/cloudbeaver.png",
   },
   {
@@ -305,43 +334,43 @@ const dashboard = [
   {
   "name": "QBittorrent",
   "description": "BitTorrent client",
-  "url": "http://torrents.lan",
+  "url": "https://torrents.mxd.codes",
   "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/qbittorrent.png",
   },
   {
   "name": "Prowlarr",
   "description": "Proxy Server",
-  "url": "http://prowlarr.lan",
+  "url": "https://prowlarr.mxd.codes",
   "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/prowlarr.png",
   },
   {
   "name": "Tandoor",
   "description": "Proxy Server",
-  "url": "http://tandoor.lan",
+  "url": "https://tandoor.mxd.codes",
   "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/tandoorrecipes.png",
   },
   {
   "name": "Home Assistant",
   "description": "Proxy Server",
-  "url": "http://ha.lan",
+  "url": "https://home-assistant.mxd.codes",
   "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/home-assistant-circle.png",
   },
   {
   "name": "mxd.codes",
   "description": "Personal website",
-  "url": "http://mxd.lan",
+  "url": "https://mxd.codes",
   "icon": "https://api.mxd.codes/uploads/small_android_launchericon_512_512_a7c8044a93.png",
   },
   {
   "name": "Strapi",
   "description": "Strapi",
-  "url": "http://strapi.lan",
+  "url": "https://api.mxd.codes",
   "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/strapi.png",
   },
   {
   "name": "Matomo",
   "description": "Web Analytics",
-  "url": "http://analytics.lan",
+  "url": "https://analytics.mxd.codes",
   "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/matomo.png",
   },
   {
