@@ -51,13 +51,13 @@ export default function LinksCard({item}) {
               src={item.icon}
               title={item.name}
               alt={item.name}
-              width={60}
-              height={60}
+              width={40}
+              height={40}
             />
           </ImageContainer>
           <div>
             <Title>{item.name}</Title>
-            <Description>{item.description}</Description>
+            {/*<Description>{item.description}</Description>*/}
             <SubTitle>{item.url}</SubTitle>
             </div>
         </Link>

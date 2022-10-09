@@ -261,6 +261,12 @@ const dashboard = [
   "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/jellyfin.png",
   },
   {
+  "name": "Jellyseerr",
+  "description": "Media System",
+  "url": "http://jellyseerr.lan",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/jellyseerr.png",
+  },
+  {
   "name": "PhotoPrism",
   "description": "Photos",
   "url": "http://photos.lan",
